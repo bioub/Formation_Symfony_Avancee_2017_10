@@ -1,0 +1,4 @@
+AppBundle\Entity\Contact:
+    contact{1..10}:
+        firstName: 'Toto'
+        lastName: 'Toto'

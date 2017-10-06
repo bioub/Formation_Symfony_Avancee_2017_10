@@ -50,12 +50,11 @@ class ContactTest extends TestCase
 
     public function testIntegrationWithCompany() {
         $company = new Company();
-        $company->setName('Acme');
 
         $this->contact->setCompany($company);
         $this->assertEquals(
-            'Acme',
-            $this->contact->getCompany()->getName()
+            $company,
+            $this->contact->getCompany()
         );
     }
 }

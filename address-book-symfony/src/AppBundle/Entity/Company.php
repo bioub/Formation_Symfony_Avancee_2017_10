@@ -48,6 +48,18 @@ class Company
     }
 
     /**
+     * @param int $id
+     * @return Company
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+
+
+    /**
      * Set name
      *
      * @param string $name

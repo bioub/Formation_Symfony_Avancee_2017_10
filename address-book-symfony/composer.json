@@ -5,7 +5,8 @@
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": {
-            "AppBundle\\": "src/AppBundle"
+            "AppBundle\\": "src/AppBundle",
+            "Bioub\\": "src/Bioub"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
@@ -27,6 +28,7 @@
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
+        "nelmio/alice": "^3.0",
         "phpunit/phpunit": "^4.8",
         "sensio/generator-bundle": "^3.0",
         "symfony/phpunit-bridge": "^3.0"
@@ -50,7 +52,7 @@
     "config": {
         "bin-dir": "bin",
         "platform": {
-            "php": "5.5.9"
+            "php": "7.0.8"
         },
         "sort-packages": true
     },

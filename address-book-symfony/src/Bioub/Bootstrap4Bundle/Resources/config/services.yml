@@ -1,0 +1,9 @@
+services:
+    Bioub\Bootstrap4Bundle\Twig\FlashAlertExtension:
+        class: Bioub\Bootstrap4Bundle\Twig\FlashAlertExtension
+        arguments: ["@session"]
+        tags: ["twig.extension"]
+        public: false
+#    bioub_bootstrap4.example:
+#        class: Bioub\Bootstrap4Bundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

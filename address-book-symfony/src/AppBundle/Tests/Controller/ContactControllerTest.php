@@ -10,7 +10,10 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class ContactControllerTest extends WebTestCase
 {
     public function setUp() {
-
+        // TODO reimporter un dump
+        // fichier SQL
+        // DoctrineDataFixture
+        // Alice / Faker
     }
 
     public function testList()
@@ -74,6 +77,8 @@ class ContactControllerTest extends WebTestCase
         );
     }
 
+    // Attention ce test dépend de la DB, si c'est ce qu'on veut
+    // importer un dump dans setUp
     public function testShow()
     {
         $client = static::createClient();
